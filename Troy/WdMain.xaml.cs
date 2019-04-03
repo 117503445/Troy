@@ -23,7 +23,9 @@ namespace Troy
         {
             InitializeComponent();
             App.WdMain = this;
+#if Evil && !DEBUG
             Hide();
+#endif
         }
     }
 }
